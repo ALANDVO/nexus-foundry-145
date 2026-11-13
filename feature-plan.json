@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "current_feature": "bg-mode",
+  "features": [
+    {
+      "id": "bg-mode",
+      "title": "Background Mode to prevent stealing focus",
+      "status": "in_progress",
+      "acceptance": [
+        "New tabs opened with --background flag open in background without activating target",
+        "Tab switches skip Page.bringToFront to preserve current view",
+        "Navigation skips Page.bringToFront after navigation",
+        "Auto-connect respects background flag for initial fresh tab",
+        "Environment variable AGENT_BROWSER_BACKGROUND works globally and per-command"
+      ],
+      "implementation": [
+        "src/cli.js",
+        "src/chrome.js"
+      ],
+      "tests": [
+        "test/chrome.test.js"
+      ]
+    }
+  ]
+}

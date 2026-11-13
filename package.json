@@ -1,0 +1,17 @@
+{
+  "name": "agent-browser",
+  "version": "0.1.0",
+  "description": "Browser automation CLI for AI agents",
+  "main": "src/cli.js",
+  "scripts": {
+    "start": "node src/cli.js",
+    "test": "node test/chrome.test.js"
+  },
+  "keywords": ["browser", "automation", "ai"],
+  "author": "Alan Vo <alanvo@gmail.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "chrome-remote-interface": "latest",
+    "yargs": "latest"
+  }
+}
