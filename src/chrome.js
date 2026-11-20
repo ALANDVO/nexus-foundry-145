@@ -50,7 +50,7 @@ module.exports = {
     const { background = false } = options;
     console.log("Auto-connecting to Chrome, background=" + background);
     if (background) {
-      await this.createTab(\, { background: true });
+      await this.createTab(url, { background: true });
     }
     return;
   },
